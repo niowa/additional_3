@@ -1,4 +1,5 @@
 module.exports = function getBase(base) {
+  if (+base > Number.MAX_SAFE_INTEGER) return base - 1;
   let bank = +base;
   let go = false;
   for (var i = 2, step = 2; bank != 0;) {
