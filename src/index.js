@@ -1,5 +1,4 @@
-//module.exports =
-function getBase(base) {
+module.exports = function getBase(base) {
   let bank = +base;
   let go = false;
   for (var i = 2, step = 2; bank != 0;) {
